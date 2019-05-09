@@ -8,6 +8,9 @@ import android.graphics.drawable.Drawable;
 
 import java.util.ArrayList;
 
+/**
+ * 多云
+ */
 public class CloudyDrawer extends BaseDrawer {
 
 	// final ArrayList<CloudHolder> holders = new ArrayList<CloudHolder>();

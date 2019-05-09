@@ -9,6 +9,9 @@ import android.graphics.RectF;
 
 import java.util.ArrayList;
 
+/**
+ * 沙尘暴
+ */
 public class SandDrawer extends BaseDrawer{
 
 	public SandDrawer(Context context, boolean isNight) {
