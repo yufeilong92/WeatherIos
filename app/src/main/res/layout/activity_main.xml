@@ -11,7 +11,16 @@
         android:id="@+id/btn_show"
         android:text="选择天气"
         android:layout_height="wrap_content"/>
-<com.example.weatherios.weather.DynamicWeatherView android:layout_width="match_parent"
+    <Button android:layout_width="match_parent"
+            android:id="@+id/btn_finish"
+            android:layout_height="wrap_content"/>
+    <com.example.weatherios.weather.DynamicWeatherView android:layout_width="match_parent"
+                                                       android:id="@+id/weather"
+                                                       android:layout_height="54dp"/>
+<Space android:layout_width="match_parent" android:layout_height="20dp"/>
+    <com.example.weatherios.weather.DynamicWeatherView android:layout_width="match_parent"
                                                    android:id="@+id/weatherView"
                                                    android:layout_height="match_parent"/>
+
+
 </LinearLayout>

@@ -20,7 +20,11 @@ class MainActivity : AppCompatActivity() {
         initOnClick()
         initWeather()
     }
-    fun initOnClick(){
+
+    fun initOnClick() {
+        btn_finish.setOnClickListener {
+            finish()
+        }
         btn_show.setOnClickListener {
             val builder = AlertDialog.Builder(this@MainActivity)
             val strs = ArrayList<String>()
@@ -50,25 +54,30 @@ class MainActivity : AppCompatActivity() {
 
     private fun notifyActivityUpdate() {
         weatherView.setDrawerType(mDrawerType)
+        weather.setDrawerType(mDrawerType)
     }
 
-    fun  initWeather(){
+    fun initWeather() {
         weatherView.setDrawerType(BaseDrawer.Type.FOG_D)
+        weather.setDrawerType(BaseDrawer.Type.FOG_D)
     }
 
     override fun onResume() {
         super.onResume()
         weatherView.onResume()
+        weather.onResume()
     }
 
     override fun onPause() {
         super.onPause()
         weatherView.onPause()
+        weather.onPause()
     }
 
     override fun onDestroy() {
         super.onDestroy()
         weatherView.onDestroy()
+        weather.onDestroy()
     }
 
 }

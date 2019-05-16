@@ -126,7 +126,7 @@ public class RainDrawer extends BaseDrawer {
 			this.rainColor = Color.argb((int) (getRandom(0.1f, 0.5f) * 255f), 0xff, 0xff, 0xff);
 			this.maxY = maxY;
 //			this.v0 = 0;//maxY * 0.1f;
-			this.v = speed * getRandom(0.9f, 1.1f);
+			this.v = speed * getRandom(0.1f, 0.7f);
 			final float maxTime = maxY / this.v;//  (float) Math.sqrt(2f * maxY / acceleration);//s = 0.5*a*t^2;
 			this.curTime = getRandom(0, maxTime);
 		}
